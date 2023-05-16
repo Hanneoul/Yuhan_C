@@ -1,48 +1,20 @@
 #include <stdio.h>
 
-int print_title_screen()
-{
-	printf("###############################\n");
-	printf("##                           ##\n");
-	printf("##         Dino Run          ##\n");
-	printf("##          V.0.1            ##\n");
-	printf("##                           ##\n");
-	printf("##  1. Start Game            ##\n");
-	printf("##  2. How to Play           ##\n");
-	printf("##  3. Exit                  ##\n");
-	printf("##                           ##\n");
-	printf("###############################\n");
-
-	return 0;
-}
-
-int print_how_to_play_screen()
-{
-	printf("###############################\n");
-	printf("##                           ##\n");
-	printf("##      To Avoid Enemy       ##\n");
-	printf("##                           ##\n");
-	printf("##  Press Space Bar To Jump  ##\n");
-	printf("##                           ##\n");
-    	printf("###############################\n");
-
-	return 0;
-}
-
 int main()
 {
 	int game_state = 1;
 
-	char map[450];	/* 가로 : 30 + 1(개행문자)  세로 15  */
+	char map[465];	/* 가로 : 30 + 1(개행문자)  세로 15  */
 	
-	int i = 0;
-	while(i<450)
+	int i = 1;
+	while(i<466)
 	{
-      		map[i]='0';
+      		map[i-1]='0';
+		if( (i)%31 == 0)
+			map[i-1] = '\n';
 		i=i+1;
 	}
-	
-	map[2] = '\0';
+	map[i] = '\0';
 
 	printf("%s", map);
 
