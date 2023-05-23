@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-int strPrint(const char* string)
+
+
+int strPrint(char* map, const char* string,int x,int y, int len)
 {
 	char *a;
 	a = (char* )string;
