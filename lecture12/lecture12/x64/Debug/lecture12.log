@@ -1,0 +1,4 @@
+﻿  main.c
+D:\elflee\Yuhan_C\lecture12\lecture12\main.c(42,33): warning C4087: 'clock': 'void' 매개 변수 목록을 사용하여 선언되었습니다.
+D:\elflee\Yuhan_C\lecture12\lecture12\main.c(66,31): warning C4087: 'clock': 'void' 매개 변수 목록을 사용하여 선언되었습니다.
+  lecture12.vcxproj -> D:\elflee\Yuhan_C\lecture12\x64\Debug\lecture12.exe
