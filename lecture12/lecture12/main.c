@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ï»¿#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -66,6 +67,58 @@ int main()
 	clock_t deltaTimeEnd = clock(NULL);
 
 	printf("\nê±¸ë¦° ì‹œê°„ : %d", deltaTimeEnd - deltaTimeStart);
+=======
+#define _YUHAN_C_WINDOW_USER
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#ifdef _YUHAN_C_WINDOW_USER
+#include <windows.h>
+#endif
+
+#ifdef _YUHAN_C_MAC_USER
+#include <unistd.h>
+#endif
+
+int main(void)
+{
+	clock_t SJTstart;
+	SJTstart = clock();
+
+	int i = 0;
+
+	while (i< 30)
+	{		
+		/*system("cls");*/
+
+		COORD pos = { 0,0 };
+		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+		
+		printf("¼öÁ¤ÀÌ°¡ %d¹øÂ° ³ª¿¡°Ô È­¸¦ ³»±â ½ÃÀÛÇß´Ù....\n", i+1, (int)SJTstart);
+				
+		printf("¼öÁ¤ÀÌÀÇ ºÐ³ë : ");
+		
+		int j = 0;
+		while (j < i)
+		{
+			printf("#");
+			j = j + 1;
+		}		
+		Sleep(100);
+		i = i + 1;		
+	}
+
+	clock_t SJTend;
+	SJTend = clock();
+
+	printf("%dms¸¸Å­ È­¸¦ ³Â´Âµ¥ ÁöÄ¡Áö ¾Ê°í ÀÖ´Ù...\n", (int)(SJTend - SJTstart));
+	
+	
+	/*char input[10];
+	scanf_s("%d", input, 10);*/
+>>>>>>> 2327e950bf6215e72def592d37e8fb643ac646f4
 
 	return 0;
 }
