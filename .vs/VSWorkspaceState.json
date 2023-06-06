@@ -1,8 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< HEAD
     "\\lecture14"
   ],
   "SelectedNode": "\\lecture12",
+=======
+    "\\lecture12",
+    "\\lecture12\\lecture12"
+  ],
+  "SelectedNode": "\\lecture12\\lecture12\\main.c",
+>>>>>>> f0a7cf533bac1ba92cf77bdd79709aa8aac46167
   "PreviewInSolutionExplorer": false
 }
