@@ -1,0 +1,4 @@
+﻿  GameCore.c
+C:\Users\elfle\source\repos\Yuhan_C\lecture14\lecture14\GameCore.c(29,20): warning C4013: 'getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\elfle\source\repos\Yuhan_C\lecture14\lecture14\GameCore.c(67,6): warning C4013: 'exit'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  lecture14.vcxproj -> C:\Users\elfle\source\repos\Yuhan_C\lecture14\lecture14\x64\Debug\lecture14.exe
